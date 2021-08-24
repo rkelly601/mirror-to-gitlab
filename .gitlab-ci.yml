@@ -1,0 +1,10 @@
+image: alpine:latest
+
+stages:
+  - test
+
+Testing:
+  stage: test
+  script: 
+    - echo "This is a Manual job"
+  when: manual
