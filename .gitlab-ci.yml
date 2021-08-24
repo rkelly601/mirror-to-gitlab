@@ -2,9 +2,15 @@ image: alpine:latest
 
 stages:
   - test
+  - deploy
 
-Testing:
+Test:
   stage: test
+  scrip:
+    - echo "this is a test"
+
+Deploy:
+  stage: deploy
   script: 
     - echo "This is a Manual job"
   when: manual
